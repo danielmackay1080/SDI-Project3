@@ -13,12 +13,13 @@ var monster4 = 'Giant';
 var helpVillagers = true
 
 
+
 console.log('It is a fine sunny day, everyone is going about their business until they see a ' + monster4 + ' rustling the bushes' + '.');
 
 // First function or Procedure
 
 var warnVillage = function(argArray, helpVillagers){
-		confirm('Warn villagers');
+		var confrim = confirm('Warn villagers');
 		if (helpVillagers === true){
 		console.log('The villagers sound the alarm and prepare for attack');
 			} else {
@@ -53,6 +54,7 @@ var helpOrphan = function (numberVillagers){
 	console.log('The Heroes have helped the orphans');
 		} else {
 			console.log('The Orphans escape');
+			}
 				while (numberVillagers > 0 && numberVillagers <= 40){
 				console.log(numberVillagers + ' Orphans have been saved');
 				numberVillagers++;
@@ -67,9 +69,9 @@ console.log('The vampire has been defeated');
 
 console.log('A ' + monster3 + ' has appeared and is attacking a near by building.');
 
-var defeatDragon = function(){
-	confirm('Help Villagers');
-	confirm('Help Animals');
+var defeatDragon = function(helpVillagers){
+	var confirm1 = confirm('Help Villagers');
+	var confirm2 = confirm('Help Animals');
 		if (helpVillagers === true){
 			console.log('We are all saved');
 		} else {
@@ -78,6 +80,8 @@ var defeatDragon = function(){
 };
 defeatDragon();
 
+console.log('The Dragon is defeated and the village is saved');
+console.log('There are ' + farmAnimals.length + ' types of animals left');
 
 
 
