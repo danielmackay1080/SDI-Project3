@@ -1,22 +1,19 @@
 var jsonData = {
 
-	"The Heroes":
+	"theHeroes":
 		[
 			{
 				'heroFirstName': 'Dan',
-				'heroType': 'Knight',
-				'heroAge':   26
+				'heroType': 'The Knight',
 			},
 			
 			{
 				'heroFirstName': 'John',
-				'heroType': 'Samurai',
-				'heroAge':   32
+				'heroType': 'The Samurai',
 			},
 			{
 				'heroFirstName': 'Nick',
-				'heroType': 'Mage',
-				'heroAge':   30
+				'heroType': 'The Mage',
 			},
 		]
 };
