@@ -67,14 +67,12 @@ console.log('The vampire has been defeated');
 
 console.log('A ' + monster3 + ' has appeared and is attacking a near by building.');
 
-var defeatDragon = function(helpVillagers){
-	confirm('Help Villagers')
+var defeatDragon = function(){
+	confirm('Help Villagers');
 	confirm('Help Animals');
 		if (helpVillagers === true){
-			if (helpVillagers === true){
 			console.log('We are all saved');
-		};
-	} else {
+		} else {
 		console.log('We are all doomed');
 	};
 };
