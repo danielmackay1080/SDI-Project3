@@ -10,18 +10,20 @@ var monster1 = 'Cyclops';
 var monster2 = 'Vampire';
 var monster3 = 'Dragon';
 var monster4 = 'Giant';
+var helpVillagers = true
+
 
 console.log('It is a fine sunny day, everyone is going about their business until they see a ' + monster4 + ' rustling the bushes' + '.');
 
 // First function or Procedure
 
-var warnVillage = function(argArray, confirm2){
-	var confirm2 = confirm(' Warn the Villagers');
-	if (confirm2 === true){
-	console.log('The villagers sound the alarm and prepare for attack');
-	} else ;{
-	console.log('The ' + argArray + ' are under attack' + '.')
-	}
+var warnVillage = function(argArray, helpVillagers){
+		confirm('Warn villagers');
+		if (helpVillagers === true){
+		console.log('The villagers sound the alarm and prepare for attack');
+			} else {
+			console.log('The ' + argArray + ' are under attack' + '.')
+		};
 };
 warnVillage(farmAnimals);
 
@@ -46,17 +48,37 @@ console.log('The Heroes have defeated the giant');
 console.log('The Heroes Notice a vampire attacking an orphanage');
 
 var helpOrphan = function (numberVillagers){
-	var confirm3 = confirm('Help Orphans');
-	if (confirm3 === true){
+	confirm('Help Orphans');
+	if (helpVillagers === true){
 	console.log('The Heroes have helped the orphans');
-	} 
-		while (numberVillagers > 0 && numberVillagers <= 40){
-			console.log(numberVillagers + ' Orphans have been saved');
-			numberVillagers++;
-			};
-	return numberVillagers;
+		} else {
+			console.log('The Orphans escape');
+				while (numberVillagers > 0 && numberVillagers <= 40){
+				console.log(numberVillagers + ' Orphans have been saved');
+				numberVillagers++;
+				};
+		return numberVillagers;
 };
 helpOrphan(numberVillagers);
+
+console.log('The vampire has been defeated');
+
+// The 4th Function: Nested conditional and String Function
+
+console.log('A ' + monster3 + ' has appeared and is attacking a near by building.');
+
+var defeatDragon = function(helpVillagers){
+	confirm('Help Villagers')
+	confirm('Help Animals');
+		if (helpVillagers === true){
+			if (helpVillagers === true){
+			console.log('We are all saved');
+		};
+	} else {
+		console.log('We are all doomed');
+	};
+};
+defeatDragon();
 
 
 
